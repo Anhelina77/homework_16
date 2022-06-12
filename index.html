@@ -8,16 +8,24 @@
 </head>
 <body>
     <script>
-        function fibonachi(n) {
+        function tempFib() {
             const temp = [0, 1, 1];
 
+        function fib(n) {
             if (!temp[n]) {
-                for (let i = temp.length; i <= n; i++) {
+            for (let i = temp.length; i <= n; i++) {
             temp[i] = temp[i - 1] + temp[i - 2];
             }
         }
         return temp[n];
         }
+        return fib;
+        }
+
+    const fib = tempFib();
+
+    console.log(fib(10))
+    console.log(fib(5))
     </script>
 </body>
 </html>
