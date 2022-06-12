@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 16</title>
+</head>
+<body>
+    <script>
+        function fibonachi(n) {
+            const temp = [0, 1, 1];
+
+            if (!temp[n]) {
+                for (let i = temp.length; i <= n; i++) {
+            temp[i] = temp[i - 1] + temp[i - 2];
+            }
+        }
+        return temp[n];
+        }
+    </script>
+</body>
+</html>
